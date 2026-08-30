@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<title>Impressum — Centerscout GmbH</title>
+<meta name="description" content="Impressum und Anbieterkennzeichnung der Centerscout GmbH, Bensheim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* Tokens identisch zu index.html — bei Zusammenführung in eine
+   gemeinsame Datei auslagern (z. B. assets/base.css). */
+:root {
+  --ink:#2E3440; --paper:#FAF9F7; --white:#FFFFFF;
+  --blue:#3A82D6; --rule:#D8DBE0; --grey:#7A828F; --mid:#5A6270;
+  --sans:'IBM Plex Sans', system-ui, sans-serif;
+  --mono:'IBM Plex Mono', ui-monospace, monospace;
+  --page:1180px; --gutter:clamp(24px, 5vw, 72px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: 17px; line-height: 1.6; text-wrap: pretty;
+}
+a { color: var(--blue); text-decoration: none; }
+a:hover { color: #2A5FA0; text-decoration: underline; }
+h1, h2 { margin: 0; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+.wrap { width: 100%; max-width: var(--page); margin-inline: auto; padding-inline: var(--gutter); }
+
+.eyebrow {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--grey);
+}
+
+.site-header { border-bottom: 2px solid var(--ink); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 32px; padding-block: 28px;
+}
+.logo { display: block; width: 252px; height: auto; }
+.site-nav ul { display: flex; gap: 32px; font-size: 15px; }
+.site-nav a { color: var(--mid); }
+.site-nav a:hover { color: var(--ink); text-decoration: none; }
+
+.imprint { padding-block: clamp(48px, 8vw, 96px); }
+.imprint__inner { display: flex; flex-direction: column; gap: 48px; max-width: 760px; }
+.imprint h1 { font-size: clamp(30px, 4.4vw, 46px); }
+.imprint__head { display: flex; flex-direction: column; gap: 18px; }
+
+.block { display: flex; flex-direction: column; gap: 14px; }
+.block h2 { font-size: 19px; }
+.block p, .block address {
+  font-style: normal; color: var(--mid); font-size: 16px;
+}
+.block dl {
+  margin: 0; display: grid; grid-template-columns: max-content 1fr;
+  gap: 7px 28px; font-family: var(--mono); font-size: 14.5px;
+}
+.block dt { color: var(--grey); }
+.block dd { margin: 0; color: var(--ink); }
+.block--rule { border-top: 1px solid var(--rule); padding-top: 40px; }
+
+.site-footer { border-top: 1px solid var(--rule); padding-block: 32px 44px; }
+.site-footer .wrap {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px;
+  font-family: var(--mono); font-size: 12px; color: var(--grey);
+}
+
+@media (max-width: 640px) {
+  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 22px; }
+  .site-nav ul { gap: 22px; flex-wrap: wrap; }
+  .logo { width: 216px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" aria-label="Centerscout GmbH — Startseite">
+      <img class="logo" src="centerscout-logo-1c.svg" alt="Centerscout — IT-Consulting, Softwareentwicklung">
+    </a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#produkte">Produkte</a></li>
+        <li><a href="index.html#arbeitsweise">Arbeitsweise</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="imprint">
+  <div class="wrap imprint__inner">
+
+    <div class="imprint__head">
+      <p class="eyebrow">Impressum</p>
+      <h1>Anbieterkennzeichnung nach § 5 DDG</h1>
+    </div>
+
+    <section class="block">
+      <h2>Anbieter</h2>
+      <address>
+        Centerscout GmbH<br>
+        Liegnitzer Weg 2c<br>
+        64625 Bensheim<br>
+        Deutschland
+      </address>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Kontakt</h2>
+      <dl>
+        <dt>Telefon</dt>
+        <dd><a href="tel:+496251989573">+49 6251 989573</a></dd>
+        <dt>Telefax</dt>
+        <dd>+49 6251 989574</dd>
+        <dt>E-Mail</dt>
+        <dd><a href="mailto:info@centerscout.de">info@centerscout.de</a></dd>
+      </dl>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Vertretung und Registereintrag</h2>
+      <dl>
+        <dt>Geschäftsführer</dt>
+        <dd>Ralf Schwarz</dd>
+        <dt>Registergericht</dt>
+        <dd>Amtsgericht Darmstadt</dd>
+        <dt>Handelsregister</dt>
+        <dd>HRB 88344</dd>
+        <dt>USt-IdNr.</dt>
+        <dd>DE268153013</dd>
+      </dl>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>Ralf Schwarz, Anschrift wie oben.</p>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Haftung für Inhalte</h2>
+      <p>Die Inhalte dieser Seiten wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann keine Gewähr übernommen werden. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten verantwortlich, jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Haftung für Links</h2>
+      <p>Diese Website enthält Verweise auf externe Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese Inhalte ist stets der jeweilige Anbieter der Seiten verantwortlich. Zum Zeitpunkt der Verlinkung waren keine rechtswidrigen Inhalte erkennbar. Eine dauerhafte inhaltliche Kontrolle verlinkter Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.</p>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Urheberrecht</h2>
+      <p>Die auf diesen Seiten veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der Centerscout GmbH.</p>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Streitbeilegung</h2>
+      <p>Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Centerscout GmbH</span>
+    <a href="impressum.html">Impressum</a>
+  </div>
+</footer>
+
+</body>
+</html>
