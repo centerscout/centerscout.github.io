@@ -7,9 +7,8 @@
 <meta name="robots" content="noindex">
 <title>Impressum — Centerscout GmbH</title>
 <meta name="description" content="Impressum und Anbieterkennzeichnung der Centerscout GmbH, Bensheim.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 /* Tokens identisch zu index.html — bei Zusammenführung in eine
    gemeinsame Datei auslagern (z. B. assets/base.css). */
@@ -143,8 +142,19 @@ ul { margin: 0; padding: 0; list-style: none; }
     </section>
 
     <section class="block block--rule">
-      <h2>Verantwortlich für den Inhalt</h2>
-      <p>Ralf Schwarz, Anschrift wie oben.</p>
+      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <address>
+        Ralf Schwarz<br>
+        Centerscout GmbH<br>
+        Liegnitzer Weg 2c<br>
+        64625 Bensheim<br>
+        Deutschland
+      </address>
+    </section>
+
+    <section class="block block--rule">
+      <h2>Datenschutz</h2>
+      <p>Informationen zur Verarbeitung personenbezogener Daten beim Besuch dieser Website finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
     </section>
 
     <section class="block block--rule">
@@ -174,8 +184,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   <div class="wrap">
     <span>© 2026 Centerscout GmbH</span>
     <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
   </div>
 </footer>
 
+<script src="assets/cookie-notice.js" defer></script>
 </body>
 </html>
