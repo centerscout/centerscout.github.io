@@ -1,138 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="format-detection" content="telephone=no">
-<meta name="robots" content="noindex">
-<title>Datenschutzerklärung — Centerscout GmbH</title>
-<meta name="description" content="Informationen zur Verarbeitung personenbezogener Daten beim Besuch der Website der Centerscout GmbH, Bensheim.">
-<link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="fonts/fonts.css">
-<style>
-/* Tokens identisch zu index.html — bei Zusammenführung in eine
-   gemeinsame Datei auslagern (z. B. assets/base.css). */
-:root {
-  --ink:#2E3440; --paper:#FAF9F7; --white:#FFFFFF;
-  --blue:#3A82D6; --rule:#D8DBE0; --grey:#7A828F; --mid:#5A6270;
-  --sans:'IBM Plex Sans', system-ui, sans-serif;
-  --mono:'IBM Plex Mono', ui-monospace, monospace;
-  --page:1180px; --gutter:clamp(24px, 5vw, 72px);
-}
-*, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0; background: var(--paper); color: var(--ink);
-  font-family: var(--sans); font-size: 17px; line-height: 1.6; text-wrap: pretty;
-}
-a { color: var(--blue); text-decoration: none; }
-a:hover { color: #2A5FA0; text-decoration: underline; }
-h1, h2 { margin: 0; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; }
-p { margin: 0; }
-ul { margin: 0; padding: 0; list-style: none; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung — Centerscout GmbH</title>
+  <meta name="description" content="Datenschutzerklärung nach DSGVO für die Website der Centerscout GmbH, Bensheim.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-.wrap { width: 100%; max-width: var(--page); margin-inline: auto; padding-inline: var(--gutter); }
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-elev: #111a2e;
+      --fg: #e7edf7;
+      --fg-muted: #9aa6bd;
+      --accent: #78b6ff;
+      --accent-strong: #4f9bff;
+      --border: #1f2a44;
+      --max: 760px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-strong); text-decoration: underline; }
 
-.eyebrow {
-  font-family: var(--mono); font-size: 12px; letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--grey);
-}
+    header.nav { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .nav-inner, .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      color: var(--fg); font-weight: 700; letter-spacing: -0.01em;
+    }
+    .brand:hover { text-decoration: none; }
+    .brand-mark {
+      width: 28px; height: 28px; flex: none;
+      border-radius: 7px;
+      background: linear-gradient(135deg, #1a2a4d, #0b1220);
+      border: 1px solid var(--border);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+    .brand-mark svg { display: block; width: 20px; height: auto; }
+    .brand-name { font-size: 17px; }
+    .nav-back { color: var(--fg-muted); font-size: 14px; white-space: nowrap; }
+    .nav-back:hover { color: var(--fg); }
 
-.site-header { border-bottom: 2px solid var(--ink); }
-.site-header .wrap {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 32px; padding-block: 28px;
-}
-.logo { display: block; width: 252px; height: auto; }
-.site-nav ul { display: flex; gap: 32px; font-size: 15px; }
-.site-nav a { color: var(--mid); }
-.site-nav a:hover { color: var(--ink); text-decoration: none; }
+    main { padding: 56px 0 80px; }
+    h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.02em; font-weight: 700; }
+    h2 {
+      font-size: 18px; margin: 36px 0 8px;
+      color: var(--fg); font-weight: 600; letter-spacing: -0.005em;
+      scroll-margin-top: 20px;
+    }
+    p, ul { margin: 0 0 14px; color: var(--fg); }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .muted { color: var(--fg-muted); font-size: 14px; }
+    address { font-style: normal; line-height: 1.6; }
 
-.imprint { padding-block: clamp(48px, 8vw, 96px); }
-.imprint__inner { display: flex; flex-direction: column; gap: 48px; max-width: 760px; }
-.imprint h1 { font-size: clamp(30px, 4.4vw, 46px); }
-.imprint__head { display: flex; flex-direction: column; gap: 18px; }
-.imprint__lead { color: var(--mid); font-size: 16px; }
+    .toc {
+      margin: 0 0 36px;
+      padding: 14px 18px;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .toc ol { margin: 0; padding-left: 20px; color: var(--fg-muted); }
+    .toc li { margin-bottom: 4px; }
+    .toc a { color: var(--fg-muted); }
+    .toc a:hover { color: var(--fg); }
 
-.block { display: flex; flex-direction: column; gap: 14px; }
-.block h2 { font-size: 19px; }
-.block p, .block address, .block li {
-  font-style: normal; color: var(--mid); font-size: 16px;
-}
-.block ul { display: flex; flex-direction: column; gap: 8px; padding-left: 20px; list-style: disc; }
-.block li { padding-left: 4px; }
-.block dl {
-  margin: 0; display: grid; grid-template-columns: max-content 1fr;
-  gap: 7px 28px; font-family: var(--mono); font-size: 14.5px;
-}
-.block dt { color: var(--grey); }
-.block dd { margin: 0; color: var(--ink); }
-.block--rule { border-top: 1px solid var(--rule); padding-top: 40px; }
-
-.site-footer { border-top: 1px solid var(--rule); padding-block: 32px 44px; }
-.site-footer .wrap {
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px;
-  font-family: var(--mono); font-size: 12px; color: var(--grey);
-}
-
-@media (max-width: 640px) {
-  .site-header .wrap { flex-direction: column; align-items: flex-start; gap: 22px; }
-  .site-nav ul { gap: 22px; flex-wrap: wrap; }
-  .logo { width: 216px; }
-}
-</style>
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0 40px;
+      color: var(--fg-muted);
+      font-size: 13px;
+    }
+    .foot-inner {
+      display: flex; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap;
+    }
+    .foot-inner a { color: var(--fg-muted); }
+    .foot-inner a:hover { color: var(--fg); }
+    .foot-links { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .foot-sep { color: var(--border); }
+  </style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="index.html" aria-label="Centerscout GmbH — Startseite">
-      <img class="logo" src="centerscout-logo-1c.svg" alt="Centerscout — IT-Consulting, Softwareentwicklung">
-    </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
-      <ul>
-        <li><a href="index.html#leistungen">Leistungen</a></li>
-        <li><a href="index.html#produkte">Produkte</a></li>
-        <li><a href="index.html#arbeitsweise">Arbeitsweise</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="imprint">
-  <div class="wrap imprint__inner">
-
-    <div class="imprint__head">
-      <p class="eyebrow">Datenschutz</p>
-      <h1>Datenschutzerklärung</h1>
-      <p class="imprint__lead">Diese Erklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten beim Besuch dieser Website (nachfolgend „Website“) nach der Datenschutz-Grundverordnung (DSGVO).</p>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand" aria-label="Centerscout GmbH — Startseite">
+        <span class="brand-mark">
+          <svg viewBox="4 10 244 236" fill="none" aria-hidden="true">
+            <circle cx="122" cy="128" r="98" stroke="var(--fg)" stroke-width="28" stroke-dasharray="492 124" stroke-dashoffset="-62"/>
+            <path d="M 148 104 A 25 25 0 1 0 123 129 A 25 25 0 1 1 98 154" stroke="var(--fg)" stroke-width="18"/>
+            <circle cx="228" cy="128" r="14" fill="var(--accent)"/>
+          </svg>
+        </span>
+        <span class="brand-name">Centerscout</span>
+      </a>
+      <a class="nav-back" href="index.html">&larr; Zurück zur Startseite</a>
     </div>
+  </header>
 
-    <section class="block">
-      <h2>1. Verantwortlicher</h2>
+  <main>
+    <div class="container">
+      <h1>Datenschutzerklärung</h1>
+      <p class="muted">Stand: September 2026</p>
+
+      <p>
+        Diese Erklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten beim Besuch dieser
+        Website nach der Datenschutz-Grundverordnung (DSGVO).
+      </p>
+
+      <div class="toc">
+        <ol>
+          <li><a href="#verantwortlich">Verantwortlicher</a></li>
+          <li><a href="#hosting">Aufruf der Website und Hosting</a></li>
+          <li><a href="#schriften">Schriftarten</a></li>
+          <li><a href="#cookies">Cookies, Tracking, Analyse</a></li>
+          <li><a href="#kontakt">Kontaktaufnahme</a></li>
+          <li><a href="#termin">Terminvereinbarung</a></li>
+          <li><a href="#links">Externe Verweise</a></li>
+          <li><a href="#verschluesselung">Verschlüsselung</a></li>
+          <li><a href="#profiling">Keine automatisierte Entscheidungsfindung</a></li>
+          <li><a href="#rechte">Ihre Rechte</a></li>
+          <li><a href="#aenderungen">Stand und Änderungen</a></li>
+        </ol>
+      </div>
+
+      <h2 id="verantwortlich">1. Verantwortlicher</h2>
       <p>Verantwortlicher im Sinne des Art. 4 Nr. 7 DSGVO ist:</p>
       <address>
         Centerscout GmbH<br>
         Liegnitzer Weg 2c<br>
         64625 Bensheim<br>
-        Deutschland
+        Deutschland<br>
+        Vertreten durch: Geschäftsführer Ralf Schwarz<br>
+        Telefon: +49 6251 989573<br>
+        E-Mail: <a href="mailto:info@centerscout.de">info@centerscout.de</a>
       </address>
-      <dl>
-        <dt>Vertreten durch</dt>
-        <dd>Geschäftsführer Ralf Schwarz</dd>
-        <dt>Telefon</dt>
-        <dd>+49 6251 989573</dd>
-        <dt>E-Mail</dt>
-        <dd><a href="mailto:info@centerscout.de">info@centerscout.de</a></dd>
-      </dl>
-      <p>Ein Datenschutzbeauftragter ist gesetzlich nicht bestellt. Bei Fragen zum Datenschutz wenden Sie sich an die vorstehenden Kontaktdaten.</p>
-    </section>
+      <p class="muted">
+        Ein Datenschutzbeauftragter ist gesetzlich nicht bestellt. Weitere Angaben finden Sie im
+        <a href="impressum.html">Impressum</a>.
+      </p>
 
-    <section class="block block--rule">
-      <h2>2. Aufruf der Website und Hosting</h2>
-      <p>Diese Website wird bei GitHub Pages betrieben, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (ein Unternehmen der Microsoft Corporation).</p>
-      <p>Beim Aufruf der Website erhebt der Hosting-Anbieter technisch bedingt Daten, die Ihr Browser übermittelt, und speichert diese in Server-Logfiles. Dazu können gehören:</p>
+      <h2 id="hosting">2. Aufruf der Website und Hosting</h2>
+      <p>
+        Diese Website wird als statische Seite bei <strong>GitHub Pages</strong> betrieben, einem Dienst der GitHub, Inc.,
+        88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (ein Unternehmen der Microsoft Corporation).
+      </p>
+      <p>
+        Beim Aufruf der Website erhebt der Hosting-Anbieter technisch bedingt Daten, die Ihr Browser übermittelt, und
+        speichert diese in Server-Logfiles. Dazu können gehören:
+      </p>
       <ul>
         <li>IP-Adresse des anfragenden Geräts</li>
         <li>Datum und Uhrzeit des Zugriffs</li>
@@ -140,50 +177,78 @@ ul { margin: 0; padding: 0; list-style: none; }
         <li>übertragene Datenmenge und Meldung über den erfolgreichen Abruf</li>
         <li>übermittelte Referrer-URL sowie Browsertyp und Betriebssystem</li>
       </ul>
-      <p>Die Verarbeitung erfolgt zur Auslieferung der Inhalte, zur Gewährleistung der Stabilität und Sicherheit sowie zur Abwehr von Angriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das berechtigte Interesse liegt in einem sicheren und zuverlässigen Betrieb der Website. Die Logdaten werden nur für einen begrenzten Zeitraum gespeichert und anschließend gelöscht.</p>
-      <p>Mit GitHub besteht eine Vereinbarung zur Auftragsverarbeitung nach Art. 28 DSGVO. Eine Übermittlung von Daten in die USA kann stattfinden. GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert; ergänzend gelten die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.</p>
-    </section>
+      <p>
+        Die Verarbeitung erfolgt zur Auslieferung der Inhalte, zur Gewährleistung der Stabilität und Sicherheit sowie zur
+        Abwehr von Angriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; das berechtigte Interesse liegt in einem
+        sicheren und zuverlässigen Betrieb der Website. Die Logdaten werden nur für einen begrenzten Zeitraum gespeichert
+        und anschließend gelöscht.
+      </p>
+      <p>
+        Mit GitHub besteht eine Vereinbarung zur Auftragsverarbeitung nach Art. 28 DSGVO. Eine Übermittlung von Daten in
+        die USA kann stattfinden. GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert; ergänzend gelten die
+        Standardvertragsklauseln der EU-Kommission. Weitere Informationen:
+        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.
+      </p>
 
-    <section class="block block--rule">
-      <h2>3. Schriftarten</h2>
-      <p>Die verwendeten Schriftarten (IBM Plex Sans und IBM Plex Mono) werden lokal von unserem Hosting-Server ausgeliefert. Es besteht keine Verbindung zu Servern Dritter (etwa Google Fonts), und es werden hierbei keine personenbezogenen Daten an Dritte übertragen.</p>
-    </section>
+      <h2 id="schriften">3. Schriftarten</h2>
+      <p>
+        Diese Website bindet keine externen Schriftarten ein (etwa Google Fonts). Es kommen ausschließlich die auf Ihrem
+        Gerät bereits installierten Systemschriften zum Einsatz. Es werden hierbei keine personenbezogenen Daten an Dritte
+        übertragen.
+      </p>
 
-    <section class="block block--rule">
-      <h2>4. Cookies und lokale Speicherung</h2>
-      <p>Die Website setzt keine Cookies zu Analyse-, Tracking- oder Marketingzwecken ein und bindet keine solchen Dienste Dritter ein.</p>
-      <p>Nachdem Sie den Datenschutzhinweis am unteren Seitenrand bestätigt haben, wird ein einzelner technischer Wert im lokalen Speicher (localStorage) Ihres Browsers abgelegt, damit der Hinweis nicht erneut erscheint. Dieser Wert enthält keine personenbezogenen Daten, wird nicht an uns oder Dritte übertragen und verbleibt ausschließlich in Ihrem Browser. Sie können ihn jederzeit über die Einstellungen Ihres Browsers löschen. Der Zugriff auf Ihr Endgerät beschränkt sich auf das für diese von Ihnen gewünschte Funktion unbedingt Erforderliche (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
-    </section>
+      <h2 id="cookies">4. Cookies, Tracking, Analyse</h2>
+      <p>
+        Diese Website setzt <strong>keine Cookies</strong>, verwendet <strong>kein Webanalyse-Tool</strong> (kein Google
+        Analytics, Matomo, Plausible o. Ä.), legt <strong>keine Daten im lokalen Speicher Ihres Browsers</strong> ab und
+        bindet <strong>keine externen Skripte oder Tracker</strong> ein. Es findet keine geräteübergreifende
+        Wiedererkennung oder Profilbildung statt.
+      </p>
 
-    <section class="block block--rule">
-      <h2>5. Kontaktaufnahme</h2>
-      <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Angaben (z. B. Name, E-Mail-Adresse oder Telefonnummer sowie den Inhalt Ihrer Anfrage) zur Bearbeitung des Anliegens.</p>
-      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, im Übrigen Art. 6 Abs. 1 lit. f DSGVO aufgrund unseres berechtigten Interesses an der Beantwortung von Anfragen. Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
-    </section>
+      <h2 id="kontakt">5. Kontaktaufnahme</h2>
+      <p>
+        Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Angaben (z. B. Name,
+        E-Mail-Adresse oder Telefonnummer sowie den Inhalt Ihrer Anfrage) zur Bearbeitung des Anliegens.
+      </p>
+      <p>
+        Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Anfrage auf den Abschluss oder die Durchführung eines
+        Vertrags gerichtet ist, im Übrigen Art. 6 Abs. 1 lit. f DSGVO aufgrund unseres berechtigten Interesses an der
+        Beantwortung von Anfragen. Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich
+        sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+      </p>
 
-    <section class="block block--rule">
-      <h2>6. Terminvereinbarung</h2>
-      <p>Über den Verweis „Meeting buchen“ gelangen Sie zu einer bei Microsoft Bookings gehosteten Buchungsseite (Microsoft Corporation, One Microsoft Way, Redmond, WA 98052, USA). Erst wenn Sie diesen Verweis anklicken, werden Daten an Microsoft übertragen; die dort von Ihnen eingegebenen Angaben (z. B. Name, E-Mail-Adresse, gewünschter Termin) verarbeiten wir zur Vorbereitung und Durchführung des Termins.</p>
-      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bzw. Art. 6 Abs. 1 lit. f DSGVO. Für die Datenverarbeitung auf der Buchungsseite gilt zusätzlich die Datenschutzerklärung von Microsoft.</p>
-    </section>
+      <h2 id="termin">6. Terminvereinbarung</h2>
+      <p>
+        Über den Verweis „Termin vereinbaren“ gelangen Sie zu einer bei Microsoft Bookings gehosteten Buchungsseite
+        (Microsoft Corporation, One Microsoft Way, Redmond, WA 98052, USA). Erst wenn Sie diesen Verweis anklicken, werden
+        Daten an Microsoft übertragen; die dort von Ihnen eingegebenen Angaben (z. B. Name, E-Mail-Adresse, gewünschter
+        Termin) verarbeiten wir zur Vorbereitung und Durchführung des Termins.
+      </p>
+      <p>
+        Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bzw. Art. 6 Abs. 1 lit. f DSGVO. Für die Datenverarbeitung auf der
+        Buchungsseite gilt zusätzlich die Datenschutzerklärung von Microsoft.
+      </p>
 
-    <section class="block block--rule">
-      <h2>7. Externe Verweise</h2>
-      <p>Die Website enthält Verweise auf externe Angebote (u. a. LinkedIn, GitHub, arXiv sowie <a href="https://www.mtanalyze.com" target="_blank" rel="noopener">mtanalyze.com</a>). Beim Anklicken eines solchen Verweises verlassen Sie diese Website; auf die Datenverarbeitung des jeweiligen Anbieters haben wir keinen Einfluss. Es findet keine automatische Einbindung von Inhalten dieser Anbieter statt.</p>
-    </section>
+      <h2 id="links">7. Externe Verweise</h2>
+      <p>
+        Die Website enthält Verweise auf externe Angebote (u. a. <a href="https://www.mtanalyze.com">mtanalyze.com</a>).
+        Beim Anklicken eines solchen Verweises verlassen Sie diese Website; auf die Datenverarbeitung des jeweiligen
+        Anbieters haben wir keinen Einfluss. Es findet keine automatische Einbindung von Inhalten dieser Anbieter statt.
+      </p>
 
-    <section class="block block--rule">
-      <h2>8. Verschlüsselung</h2>
-      <p>Die Website wird ausschließlich über eine verschlüsselte Verbindung (TLS/HTTPS) ausgeliefert, erkennbar am Schloss-Symbol in der Adresszeile Ihres Browsers.</p>
-    </section>
+      <h2 id="verschluesselung">8. Verschlüsselung</h2>
+      <p>
+        Die Website wird ausschließlich über eine verschlüsselte Verbindung (TLS/HTTPS) ausgeliefert, erkennbar am
+        Schloss-Symbol in der Adresszeile Ihres Browsers.
+      </p>
 
-    <section class="block block--rule">
-      <h2>9. Keine automatisierte Entscheidungsfindung</h2>
-      <p>Eine automatisierte Entscheidungsfindung einschließlich Profiling nach Art. 22 DSGVO findet im Zusammenhang mit dem Besuch dieser Website nicht statt.</p>
-    </section>
+      <h2 id="profiling">9. Keine automatisierte Entscheidungsfindung</h2>
+      <p>
+        Eine automatisierte Entscheidungsfindung einschließlich Profiling nach Art. 22 DSGVO findet im Zusammenhang mit dem
+        Besuch dieser Website nicht statt.
+      </p>
 
-    <section class="block block--rule">
-      <h2>10. Ihre Rechte</h2>
+      <h2 id="rechte">10. Ihre Rechte</h2>
       <p>Sie haben nach Maßgabe der gesetzlichen Voraussetzungen das Recht auf:</p>
       <ul>
         <li>Auskunft über die zu Ihrer Person verarbeiteten Daten (Art. 15 DSGVO)</li>
@@ -194,32 +259,39 @@ ul { margin: 0; padding: 0; list-style: none; }
         <li>Widerspruch gegen Verarbeitungen, die auf Art. 6 Abs. 1 lit. f DSGVO beruhen (Art. 21 DSGVO)</li>
       </ul>
       <p>Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-      <p>Unabhängig davon haben Sie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Zuständig für den Verantwortlichen ist:</p>
+      <p>
+        Unabhängig davon haben Sie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Zuständig für den
+        Verantwortlichen ist:
+      </p>
       <address>
         Der Hessische Beauftragte für Datenschutz und Informationsfreiheit<br>
         Postfach 3163<br>
         65021 Wiesbaden<br>
-        <a href="https://datenschutz.hessen.de" target="_blank" rel="noopener">datenschutz.hessen.de</a>
+        Telefon: +49 611 1408-0<br>
+        E-Mail: <a href="mailto:poststelle@datenschutz.hessen.de">poststelle@datenschutz.hessen.de</a><br>
+        Web: <a href="https://datenschutz.hessen.de">datenschutz.hessen.de</a>
       </address>
-    </section>
 
-    <section class="block block--rule">
-      <h2>11. Stand und Änderungen</h2>
-      <p>Wir passen diese Datenschutzerklärung an, sobald Änderungen der Datenverarbeitung oder der Rechtslage dies erfordern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
-      <p>Stand: August 2026</p>
-    </section>
+      <h2 id="aenderungen">11. Stand und Änderungen</h2>
+      <p>
+        Wir passen diese Datenschutzerklärung an, sobald Änderungen der Datenverarbeitung oder der Rechtslage dies
+        erfordern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.
+      </p>
+    </div>
+  </main>
 
-  </div>
-</main>
+  <footer>
+    <div class="nav-inner foot-inner">
+      <div>&copy; 2026 Centerscout GmbH</div>
+      <div class="foot-links">
+        <a href="cs_agb.pdf" target="_blank" rel="noopener">AGB</a>
+        <span class="foot-sep">&middot;</span>
+        <a href="impressum.html">Impressum</a>
+        <span class="foot-sep">&middot;</span>
+        <a href="index.html">Startseite</a>
+      </div>
+    </div>
+  </footer>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Centerscout GmbH</span>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
-  </div>
-</footer>
-
-<script src="assets/cookie-notice.js" defer></script>
 </body>
 </html>

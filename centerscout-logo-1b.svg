@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -8 276 272" role="img" aria-label="Centerscout">
+  <title>Centerscout — Logo (Variante 1B, Scout-Punkt)</title>
+  <circle cx="122" cy="128" r="98" fill="none" stroke="#14171c" stroke-width="28" stroke-dasharray="492 124" stroke-dashoffset="-62"/>
+  <path d="M 148 104 A 25 25 0 1 0 123 129 A 25 25 0 1 1 98 154" fill="none" stroke="#14171c" stroke-width="18"/>
+  <circle cx="228" cy="128" r="14" fill="#2f5fd0"/>
+</svg>
