@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Centerscout GmbH — Securities Processing und Natural Language Processing</title>
-  <meta name="description" content="Centerscout arbeitet an anspruchsvollen Aufgaben in Securities Processing und Natural Language Processing. Im Mittelpunkt stehen Business Analyse und Software Engineering — dazu eigene Werkzeuge wie MT Analyze und Faktencheck.">
+  <title>Centerscout GmbH — Business Analyse für Securities Operations</title>
+  <meta name="description" content="Centerscout arbeitet an anspruchsvollen Aufgaben in Business Analyse und Securities Operations — Wertpapier- und Settlement-Prozesse, SWIFT-Kommunikation und regulatorisches Reporting. Dazu das eigene Analysewerkzeug MT Analyze.">
   <meta name="theme-color" content="#0b1220">
 
   <meta property="og:title" content="Centerscout GmbH">
-  <meta property="og:description" content="Securities Processing, Natural Language Processing und Software Engineering — mit eigener Analysesoftware.">
+  <meta property="og:description" content="Business Analyse und Securities Operations — mit eigener Analysesoftware MT Analyze.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.centerscout.de">
 
@@ -43,14 +43,6 @@
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: var(--accent-strong); text-decoration: underline; }
-
-    mark {
-      background: rgba(120, 182, 255, 0.18);
-      color: var(--fg);
-      border-bottom: 1px solid var(--accent);
-      border-radius: 2px;
-      padding: 0 3px;
-    }
 
     .container {
       max-width: var(--max);
@@ -380,21 +372,6 @@
     .grid-table td { color: var(--fg); }
     .grid-table .accent-cell { color: var(--accent); }
     .panel-body { padding: 16px; }
-    .kv { display: grid; gap: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
-    .kv > div > span { display: block; }
-    .kv .k { color: var(--fg-muted); }
-    .kv .v { color: var(--fg); }
-    .score {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-      font-size: 13.5px;
-    }
-    .score:last-child { border-bottom: none; padding-bottom: 0; }
-    .score .sub { display: block; font-size: 12px; color: var(--fg-muted); margin-top: 3px; }
-    .score .val { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--accent); }
 
     /* ------- contact ------- */
     .contact { text-align: center; }
@@ -441,9 +418,7 @@
       </a>
       <nav class="nav-links">
         <a href="#business-analyse">Business Analyse</a>
-        <a href="#nlp">NLP</a>
         <a href="#mt-analyze">MT Analyze</a>
-        <a href="#faktencheck">Faktencheck</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
@@ -452,12 +427,11 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Securities Processing und <span class="accent">Natural Language Processing</span></h1>
+        <h1>Business Analyse für <span class="accent">Securities Operations</span></h1>
         <p class="tagline">
-          Centerscout arbeitet an anspruchsvollen Aufgaben in Securities Processing und Natural Language Processing.
-          Im Mittelpunkt stehen Business Analyse und Software Engineering: Probleme verstehen, Anforderungen und
-          Rahmenbedingungen klären und Lösungen entwickeln, die fachlich geeignet, technisch angemessen und
-          wirtschaftlich tragfähig sind.
+          Centerscout arbeitet an anspruchsvollen Aufgaben in Securities Operations: Wertpapier- und
+          Settlement-Prozesse, SWIFT-Kommunikation und regulatorisches Reporting. Im Mittelpunkt stehen
+          Business Analyse sowie das eigene Analysewerkzeug MT Analyze.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#business-analyse">
@@ -526,221 +500,10 @@
       </div>
     </section>
 
-    <!-- ============ 02 — Natural Language Processing ============ -->
-    <section class="section" id="nlp">
-      <div class="container">
-        <p class="section-label">02 — Leistungen</p>
-        <div class="feature">
-          <div>
-            <h2>Natural Language Processing</h2>
-            <p class="lead">
-              Natural Language Processing ermöglicht es, Informationen automatisiert aus natürlicher Sprache zu
-              gewinnen und für weitere Prozesse strukturiert verfügbar zu machen.
-            </p>
-            <p class="lead">
-              Centerscout beschäftigt sich insbesondere mit der Verarbeitung deutscher Sprache in fachlichen
-              Business-Kontexten und mit großen Dokumentmengen. Ein Anwendungsgebiet ist beispielsweise die
-              automatisierte Gewinnung von ESG-Kennzahlen und anderen fachlichen Informationen aus
-              Unternehmensberichten.
-            </p>
-            <div class="chips">
-              <span class="chip">Deutsche Sprache</span>
-              <span class="chip">Information Extraction</span>
-              <span class="chip">Große Dokumentmengen</span>
-            </div>
-          </div>
-          <figure class="panel" style="margin: 0;">
-            <div class="panel-head"><strong>Quelltext</strong> <span class="right">Erkennung</span></div>
-            <div class="panel-body">
-              <p style="font-size: 14px; line-height: 1.9; margin: 0 0 16px; color: var(--fg-muted);">
-                Die Gesellschaft hat ihren Sitz in <mark>Frankfurt am Main</mark> und wurde am
-                <mark>14. März 2019</mark> in das Handelsregister eingetragen. Das Stammkapital beträgt <mark>50.000 EUR</mark>.
-              </p>
-              <div class="kv">
-                <div><span class="k">sitz</span><span class="v">Frankfurt am Main</span></div>
-                <div><span class="k">eintragung</span><span class="v">2019-03-14</span></div>
-                <div><span class="k">stammkapital</span><span class="v">50000 EUR</span></div>
-              </div>
-            </div>
-          </figure>
-        </div>
-
-        <h3 class="sub">NLP ist mehr als ein Sprachmodell</h3>
-        <p class="lead">
-          Moderne Sprachmodelle haben die Möglichkeiten der automatisierten Sprachverarbeitung erheblich erweitert.
-          Sie ersetzen etablierte NLP-Verfahren jedoch nicht automatisch.
-        </p>
-        <p class="lead">
-          Satzsegmentierung, Information Extraction, domänenspezifische Regeln und trainierte NLP-Modelle können klar
-          abgegrenzte Aufgaben schnell, reproduzierbar und mit vergleichsweise geringem Ressourcenbedarf bearbeiten.
-          Sprachmodelle besitzen ihre Stärken dort, wo semantische Zusammenhänge, variierende Formulierungen oder
-          komplexere Bewertungen berücksichtigt werden müssen. Gerade bei deutscher Sprache und spezialisiertem
-          Business-Kontext kann die Kombination unterschiedlicher Verfahren interessant sein.
-        </p>
-        <p class="lead quote">
-          Die entscheidende Frage ist deshalb nicht „Klassisches NLP oder Sprachmodell?", sondern: Welches Verfahren
-          ist für die jeweilige Aufgabe geeignet – und wie lassen sich die Stärken unterschiedlicher Verfahren
-          sinnvoll kombinieren?
-        </p>
-
-        <h3 class="sub">Große Textmengen verarbeiten</h3>
-        <p class="lead">
-          Bei wenigen Dokumenten fällt der Ressourcenbedarf eines einzelnen Verarbeitungsschritts kaum ins Gewicht.
-          Bei Hunderttausenden Dokumenten sieht das anders aus. Dann werden Durchsatz, Latenz, Speicher- und
-          Rechenbedarf sowie die Kosten jedes Verarbeitungsschritts zu relevanten Architekturgrößen.
-        </p>
-        <p class="lead">
-          Ein spezialisiertes NLP-Verfahren kann eine klar definierte Aufgabe möglicherweise mit einem Bruchteil des
-          Ressourcenbedarfs eines großen Sprachmodells erledigen. Umgekehrt kann ein Sprachmodell wirtschaftlich
-          sinnvoll sein, wenn es eine Aufgabe ermöglicht, die mit klassischen Verfahren nur mit erheblichem
-          Entwicklungs- oder manuellem Arbeitsaufwand lösbar wäre.
-        </p>
-        <p class="lead accent-text">Entscheidend ist das Gesamtsystem.</p>
-      </div>
-    </section>
-
-    <!-- ============ 03 — KI-gestützte Qualitätssteuerung ============ -->
-    <section class="section" id="qualitaet">
-      <div class="container">
-        <p class="section-label">03 — Leistungen</p>
-        <h2>KI-gestützte Qualitätssteuerung</h2>
-        <p class="lead">
-          Automatisierte Textanalyse benötigt einen kontinuierlichen Qualitätsprozess – von der Entwicklung bis in
-          den laufenden Betrieb.
-        </p>
-        <div class="chain" style="margin-bottom: 28px;">
-          <span class="node">Erkennen</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Evaluieren</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Fehler analysieren</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Daten &amp; Modelle verbessern</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">neu trainieren</span>
-          <span class="arrow" aria-hidden="true">↻</span>
-        </div>
-        <p class="lead">
-          Sprachmodelle können bestehende NLP-Pipelines dabei als zusätzliche Prüfinstanz ergänzen. Sie können
-          beispielsweise bewerten, ob eine strukturierte Erkennung durch den zugrunde liegenden Text gestützt wird,
-          oder nach Informationen suchen, die von der bestehenden Pipeline möglicherweise nicht erkannt wurden.
-        </p>
-        <p class="lead accent-text">Die fachliche Entscheidung bleibt beim Menschen.</p>
-
-        <h3 class="sub">Evaluation in der Entwicklung</h3>
-        <p class="lead">
-          Neue NLP-Features müssen fachlich evaluiert werden. Änderungen dürfen bestehende Erkennungen nicht
-          unbeabsichtigt verschlechtern.
-        </p>
-        <p class="lead">
-          Ein an fachlichen Bewertungsmaßstäben kalibriertes Sprachmodell kann Evaluationen vorstrukturieren,
-          auffällige Ergebnisse hervorheben und menschliche Bewertungen ergänzen. Unterschiedliche Modelle können mit
-          denselben Prüfdaten ausgeführt und mit Referenzbewertungen verglichen werden.
-        </p>
-        <p class="lead">
-          Das Sprachmodell wird damit nicht selbst zum Qualitätsmaßstab. Auch seine Bewertung muss gegen fachliche
-          Standards evaluiert und bei Modelländerungen erneut überprüft werden.
-        </p>
-
-        <h3 class="sub">Human-in-the-Loop im Betrieb</h3>
-        <p class="lead">
-          Menschliche Prüfung ist ein wesentlicher Bestandteil vieler produktiver NLP-Prozesse. Bei großen
-          Verarbeitungsmengen kann sie jedoch selbst zum Engpass werden.
-        </p>
-        <p class="lead">
-          Automatisierte Evaluation kann helfen, die menschliche Prüfung gezielter einzusetzen. Auffällige oder
-          unsichere Fälle können priorisiert werden. Erkenntnisse aus dem produktiven Betrieb fließen anschließend
-          wieder in Entwicklung, Evaluation und Regressionstests ein.
-        </p>
-        <div class="chain" style="margin-bottom: 20px;">
-          <span class="node">Plan</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Do</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Check</span>
-          <span class="arrow" aria-hidden="true">→</span>
-          <span class="node">Act</span>
-          <span class="arrow" aria-hidden="true">↻</span>
-        </div>
-        <p class="lead accent-text">Evaluation endet nicht beim Release.</p>
-
-        <h3 class="sub">Durchsatz, Kosten und Betriebsmodell</h3>
-        <p class="lead">
-          Auch beim Einsatz von Sprachmodellen muss die gesamte Verarbeitung betrachtet werden.
-        </p>
-        <p class="lead">
-          Cloud-Dienste unterliegen je nach Anbieter und Betriebsmodell Begrenzungen bei Requests und
-          Token-Durchsatz. Bei großen Verarbeitungsmengen können Rate Limits, Netzwerklatenz und nutzungsabhängige
-          Kosten erheblichen Einfluss auf Durchlaufzeiten und Wirtschaftlichkeit haben. Lokale Modelle haben andere
-          Anforderungen: Hardware und Verarbeitungskapazität müssen für das erwartete Volumen ausgelegt werden.
-        </p>
-        <p class="lead">
-          Weder Cloud noch lokaler Betrieb ist grundsätzlich die bessere Lösung. Qualität, Volumen, Durchsatz,
-          Latenz, Daten, Infrastruktur, Abhängigkeiten, Kosten und betriebliche Risiken müssen gemeinsam betrachtet
-          werden.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ 04 — Software Engineering ============ -->
-    <section class="section" id="engineering">
-      <div class="container">
-        <p class="section-label">04 — Leistungen</p>
-        <h2>Software Engineering – vom Problem zur angemessenen Lösung</h2>
-        <p class="lead">
-          Ausgangspunkt ist das Problem, nicht eine vorgegebene Technologie oder ein vorhandenes Produkt. Software
-          Engineering bedeutet für Centerscout, fachliche Anforderungen, bestehende Systeme, technische Möglichkeiten
-          und die Bedingungen des späteren Betriebs gemeinsam zu betrachten.
-        </p>
-        <p class="lead">
-          Nicht jede Aufgabe benötigt eine neue Plattform. Nicht jede Textverarbeitung benötigt ein Sprachmodell.
-          Und nicht jedes Sprachmodell muss als Cloud-Dienst betrieben werden. Manchmal ist ein kleines
-          spezialisiertes Werkzeug die angemessene Lösung, manchmal ein klassischer Algorithmus, manchmal ein
-          Sprachmodell. Häufig liegt die beste Lösung in der Kombination unterschiedlicher Verfahren.
-        </p>
-        <p class="lead accent-text">
-          Entscheidend ist das Verhältnis zwischen fachlichem Nutzen und erforderlichem Aufwand.
-        </p>
-
-        <h3 class="sub">Angemessenheit und Wirtschaftlichkeit</h3>
-        <p class="lead">
-          Technische Lösungen müssen nicht nur funktionieren. Sie müssen unter realen Bedingungen sinnvoll betrieben
-          werden können. Dazu gehören:
-        </p>
-        <ul class="bullets">
-          <li>Entwicklungs- und Integrationsaufwand</li>
-          <li>menschlicher Arbeitsaufwand</li>
-          <li>Durchsatz und Latenz</li>
-          <li>Infrastruktur und Ressourcenbedarf</li>
-          <li>Abhängigkeiten und Engpässe</li>
-          <li>Betriebs- und Projektrisiken</li>
-          <li>laufende Kosten</li>
-        </ul>
-        <p class="lead">
-          Anbieter und Anwender haben dabei nicht zwangsläufig dieselben wirtschaftlichen Anreize. Nutzungsabhängige
-          Dienste optimieren andere Größen als ein Unternehmen, das einen Geschäftsprozess zuverlässig und
-          wirtschaftlich betreiben möchte. Deshalb wird eine Technologie nicht danach beurteilt, wie intensiv sie
-          eingesetzt werden kann, sondern danach, welchen Beitrag sie zur Lösung der konkreten Aufgabe leistet.
-        </p>
-
-        <h3 class="sub">Ressourcenschonendes Software Engineering</h3>
-        <p class="lead">
-          Angemessener Ressourceneinsatz ist zugleich eine Frage der Nachhaltigkeit. Wenn eine fachliche Aufgabe mit
-          einem spezialisierten Algorithmus zuverlässig gelöst werden kann, muss dafür nicht zwangsläufig ein großes
-          Sprachmodell ausgeführt werden. Wenn ein Sprachmodell dagegen erheblichen manuellen Aufwand reduziert oder
-          eine sonst nur schwer lösbare Aufgabe ermöglicht, kann sein Ressourceneinsatz gerechtfertigt sein.
-        </p>
-        <p class="lead accent-text">
-          Ein angemessenes System erreicht ein belastbares fachliches Ergebnis mit einem dafür angemessenen Einsatz
-          von Software, Rechenleistung und Infrastruktur.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ 05 — MT Analyze ============ -->
+    <!-- ============ 02 — MT Analyze ============ -->
     <section class="section" id="mt-analyze">
       <div class="container">
-        <p class="section-label">05 — Software</p>
+        <p class="section-label">02 — Software</p>
         <div class="feature">
           <div>
             <a class="mt-mark" href="https://www.mtanalyze.com/" target="_blank" rel="noopener" aria-label="MT Analyze">MT</a>
@@ -809,119 +572,26 @@
       </div>
     </section>
 
-    <!-- ============ 06 — Faktencheck ============ -->
-    <section class="section" id="faktencheck">
-      <div class="container">
-        <p class="section-label">06 — Software</p>
-        <div class="feature">
-          <div>
-            <h2>Faktencheck – KI-gestützte Evaluation von NLP-Ergebnissen</h2>
-            <p class="lead">
-              Faktencheck ist ein funktionsfähiges Software-Werkzeug zur automatisierten Evaluation von Ergebnissen
-              einer Textanalyse-Pipeline.
-            </p>
-            <p class="lead">
-              Die Anwendung verarbeitet Prüfberichte mit dem ursprünglichen Text, markierten Textstellen und daraus
-              abgeleiteten strukturierten Erkennungen.
-            </p>
-          </div>
-          <figure class="panel" style="margin: 0;">
-            <div class="panel-head"><strong>Faktencheck</strong> <span class="right">Batch 04 · lokales Modell</span></div>
-            <div class="panel-body" style="display: grid; gap: 12px;">
-              <div class="score">
-                <span>Die Gesellschaft hat ihren Sitz in Frankfurt am Main. <span class="sub">durch Quelle gestützt</span></span>
-                <span class="val">0.96</span>
-              </div>
-              <div class="score">
-                <span>Die Eintragung erfolgte am 14. März 2019. <span class="sub">durch Quelle gestützt</span></span>
-                <span class="val">0.91</span>
-              </div>
-              <div class="score">
-                <span>Das Stammkapital beträgt 500.000 EUR. <span class="sub" style="color: var(--accent);">nicht gestützt — zur Prüfung markiert</span></span>
-                <span class="val">0.24</span>
-              </div>
-            </div>
-          </figure>
-        </div>
-
-        <h3 class="sub">Erkennungen überprüfen</h3>
-        <p class="lead">
-          Ein lokales Sprachmodell bewertet, ob eine strukturierte Erkennung durch den zugrunde liegenden Text
-          gestützt wird, und gibt dazu einen Konfidenzwert aus. Modelle und Bewertungsmethoden sind konfigurierbar.
-        </p>
-        <p class="lead">
-          Derselbe Prüfbericht kann mit unterschiedlichen Sprachmodellen verarbeitet werden. Die Ergebnisse werden in
-          einem Excel-Report zusammengeführt und können miteinander sowie mit fachlichen Referenzbewertungen
-          verglichen werden. Damit lässt sich untersuchen, wie zuverlässig unterschiedliche Modelle eine konkrete
-          Evaluationsaufgabe übernehmen.
-        </p>
-
-        <h3 class="sub">Übersehene Informationen suchen</h3>
-        <p class="lead">
-          Faktencheck kann zusätzlich nach Informationen suchen, die von einer bestehenden NLP-Pipeline möglicherweise
-          nicht erkannt wurden. Dazu wird ein frei definierbarer fachlicher Fragenkatalog verwendet.
-        </p>
-        <p class="lead">
-          Ein Embedding-Modell sucht relevante Stellen im Eingangstext, die anschließend für die weitere Bewertung
-          herangezogen werden können. Der Text wird dafür mit klassischen NLP-Verfahren satzweise segmentiert. Eine
-          Vektordatenbank ist nicht erforderlich.
-        </p>
-        <p class="lead accent-text">
-          Faktencheck kombiniert unterschiedliche Verfahren dort, wo sie ihre jeweiligen Stärken haben: klassische
-          Sprachverarbeitung für die Textstruktur, Embeddings für die semantische Suche und Sprachmodelle für die
-          Bewertung.
-        </p>
-
-        <h3 class="sub">Für Batchverarbeitung ausgelegt</h3>
-        <p class="lead">
-          Faktencheck ist nicht auf einzelne interaktive Anfragen ausgerichtet, sondern auf wiederholte Evaluation
-          und größere Textmengen. Sprach- und Embedding-Modelle werden lokal betrieben; dadurch kann die
-          Verarbeitungskapazität auf das erwartete Volumen abgestimmt werden.
-        </p>
-        <p class="lead">
-          Bei der Bewertung eines Betriebsmodells werden jedoch nicht nur die Modellkosten betrachtet. Durchsatz,
-          Latenz, Hardwarebedarf, Datenvolumen und notwendige menschliche Prüfung bestimmen gemeinsam die
-          Wirtschaftlichkeit des Gesamtprozesses. Die Desktop-Oberfläche ermöglicht Evaluationen auch ohne
-          Softwareentwicklung.
-        </p>
-        <div class="chips" style="margin-bottom: 18px;">
-          <span class="chip">MVP · vollständig funktionsfähig</span>
-        </div>
-
-        <h3 class="sub">Einsatz und Erweiterung</h3>
-        <p class="lead">
-          Faktencheck lässt sich an konkrete Evaluationsaufgaben anpassen. Für einen Workshop zum Einstieg, die
-          Kalibrierung an fachlichen Bewertungsmaßstäben oder die Integration in bestehende Pipelines bietet
-          Centerscout Unterstützung. <a href="#kontakt">Kontakt →</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ 07 — Über Centerscout ============ -->
+    <!-- ============ 03 — Über Centerscout ============ -->
     <section class="section" id="unternehmen">
       <div class="container">
-        <p class="section-label">07 — Unternehmen</p>
+        <p class="section-label">03 — Unternehmen</p>
         <h2>Über Centerscout</h2>
         <p class="lead">
-          Die Centerscout GmbH mit Sitz in Bensheim arbeitet in den Bereichen Securities Processing, Natural Language
-          Processing und Software Engineering.
+          Die Centerscout GmbH mit Sitz in Bensheim arbeitet in den Bereichen Business Analyse und Securities
+          Operations.
         </p>
         <p class="lead">
           Geschäftsführer Ralf Schwarz verbindet langjährige Erfahrung als Business Analyst im Wertpapierumfeld mit
-          einem technischen Hintergrund in der Softwareentwicklung.
+          einem technischen Hintergrund.
         </p>
         <p class="lead">
           Im Securities-Umfeld liegt der Schwerpunkt auf Wertpapier- und Settlement-Prozessen, SWIFT-Kommunikation
           sowie der Analyse und Veränderung gewachsener Systemlandschaften.
         </p>
-        <p class="lead">
-          Im NLP-Umfeld liegt der Schwerpunkt auf deutscher Sprache und fachlichen Business-Kontexten – von
-          klassischer Information Extraction über die Verarbeitung großer Dokumentmengen bis zur ergänzenden Nutzung
-          moderner Sprachmodelle.
-        </p>
         <p class="lead accent-text">
-          Aus wiederkehrenden Herausforderungen entstehen dabei Software-Werkzeuge wie MT Analyze und Faktencheck.
-          Centerscout bringt sie in neue Projekte mit – damit Kunden das Rad nicht jedes Mal neu erfinden müssen.
+          Aus wiederkehrenden Herausforderungen entsteht dabei Software wie MT Analyze. Centerscout bringt sie in
+          neue Projekte mit – damit Kunden das Rad nicht jedes Mal neu erfinden müssen.
         </p>
       </div>
     </section>
@@ -931,8 +601,8 @@
       <div class="container">
         <h2>Stehen Sie vor einer ähnlichen Aufgabe?</h2>
         <p class="lead" style="margin-left: auto; margin-right: auto; text-wrap: balance;">
-          Ob Securities Processing oder Natural Language Processing – sprechen wir darüber, wie sich daraus ein
-          belastbares Verfahren und eine angemessene Umsetzung entwickeln lassen.
+          Sprechen wir darüber, wie sich daraus ein belastbares Verfahren und eine angemessene Umsetzung entwickeln
+          lassen.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://outlook.office.com/bookwithme/user/fe2103555724467bb8f1732cab780a8d@centerscout.net/meetingtype/-0tv2Tduv0uOp73d7A0fvA2?anonymous&amp;ismsaljsauthenabled&amp;ep=mlink" target="_blank" rel="noopener">
